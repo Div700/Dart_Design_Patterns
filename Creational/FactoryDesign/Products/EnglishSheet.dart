@@ -1,18 +1,6 @@
-import '../Interfaces/Sheet.dart';
+import '../models/question.dart';
+import 'base_sheet.dart';
 
-class Englishsheet implements Sheet {
-  @override
-  void checkAnswer() {
-    print("Checking answer");
-  }
-
-  @override
-  void nextQuestion() {
-    print("Getting next question from english question bank");
-  }
-
-  @override
-  void saveProgress() {
-    print("Saving progress for english sheet");
-  }
+class EnglishSheet extends BaseSheet {
+  EnglishSheet(List<Question> qs) : super(qs);
 }

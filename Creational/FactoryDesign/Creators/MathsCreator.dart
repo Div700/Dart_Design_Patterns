@@ -1,10 +1,14 @@
-import '../Interfaces/Sheet.dart';
 import '../Interfaces/Creator.dart';
+import '../Interfaces/Sheet.dart';
 import '../Products/MathsSheet.dart';
+import '../models/question.dart';
 
-class Mathscreator extends Creator {
+class MathsCreator implements Creator {
+  final List<Question> _data;
+  MathsCreator(this._data);
+
   @override
   Sheet getSheet() {
-    return new MathsSheet();
+    return MathsSheet(_data);
   }
 }

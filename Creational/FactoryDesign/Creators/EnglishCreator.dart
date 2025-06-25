@@ -1,10 +1,12 @@
-import '../Interfaces/Sheet.dart';
 import '../Interfaces/Creator.dart';
+import '../Interfaces/Sheet.dart';
 import '../Products/EnglishSheet.dart';
+import '../models/question.dart';
 
-class Englishcreator extends Creator {
+class EnglishCreator implements Creator {
+  final List<Question> _data;
+  EnglishCreator(this._data);
+
   @override
-  Sheet getSheet() {
-    return new Englishsheet();
-  }
+  Sheet getSheet() => EnglishSheet(_data);
 }

@@ -1,19 +1,6 @@
-import '../Interfaces/Sheet.dart';
+import '../models/question.dart';
+import 'base_sheet.dart';
 
-class Sciencesheet implements Sheet {
-  @override
-  void checkAnswer() {
-    // TODO: implement checkAnswer
-    print("Checking answer");
-  }
-
-  @override
-  void nextQuestion() {
-    print("Getting next question from Science question bank");
-  }
-
-  @override
-  void saveProgress() {
-    print("Saving progress of Science sheet");
-  }
+class ScienceSheet extends BaseSheet {
+  ScienceSheet(List<Question> qs) : super(qs);
 }

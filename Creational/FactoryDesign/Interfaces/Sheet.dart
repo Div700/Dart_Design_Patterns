@@ -1,5 +1,9 @@
+// Sheet interface
+import '../models/question.dart';
+
 abstract class Sheet {
-  void checkAnswer(); //for checking the answer
-  void nextQuestion(); //for getting next question
-  void saveProgress(); //for saving the progress of the child
+  Question? nextQuestion();
+  void checkAnswer(String userAnswer, Question question);
+  void saveProgress();
+  bool get isFinished;
 }
