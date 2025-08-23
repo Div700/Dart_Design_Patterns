@@ -1,0 +1,9 @@
+name: network_monitor
+description: A simple Dart console project for monitoring routers
+version: 1.0.0
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  xml: ^6.5.0
