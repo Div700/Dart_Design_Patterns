@@ -1,0 +1,43 @@
+{
+  "roots": [
+    "network_monitor"
+  ],
+  "packages": [
+    {
+      "name": "network_monitor",
+      "version": "1.0.0",
+      "dependencies": [
+        "xml"
+      ],
+      "devDependencies": []
+    },
+    {
+      "name": "xml",
+      "version": "6.6.1",
+      "dependencies": [
+        "collection",
+        "meta",
+        "petitparser"
+      ]
+    },
+    {
+      "name": "petitparser",
+      "version": "7.0.1",
+      "dependencies": [
+        "collection",
+        "meta"
+      ]
+    },
+    {
+      "name": "meta",
+      "version": "1.17.0",
+      "dependencies": []
+    },
+    {
+      "name": "collection",
+      "version": "1.19.1",
+      "dependencies": []
+    }
+  ],
+  "configVersion": 1
+}
