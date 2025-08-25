@@ -1,9 +1,13 @@
 import '../adaptees/cisco_router.dart';
 import '../constants/network_constants.dart';
-import '../interface/network_information.dart';
+import '../interfaces/network_information.dart';
 
+/* This is the adapter class that implements the NetworkInformation interface. It uses the CiscoRouter class (adaptee)
+ * to get the network information and then adapts it to the target interface.
+ */
 class CiscoNetworkAdapter implements NetworkInformation {
-  final CiscoRouter ciscoRouter = CiscoRouter();
+  final CiscoRouter ciscoRouter = CiscoRouter(); 
+  
   @override
   Map<String, dynamic> getNetworkInfo() {
     try {

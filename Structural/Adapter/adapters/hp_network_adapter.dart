@@ -1,9 +1,12 @@
 // adapters/hp_network_adapter.dart
 import '../adaptees/hp_router.dart';
 import '../constants/network_constants.dart';
-import '../interface/network_information.dart';
+import '../interfaces/network_information.dart';
 import 'package:xml/xml.dart'; // for parsing XML
 
+/* This is the adapter class that implements the NetworkInformation interface. It uses the HpRouter class (adaptee)
+ * to get the network information and then adapts it to the target interface.
+ */
 class HpNetworkAdapter implements NetworkInformation {
   final HpRouter hpRouter = HpRouter();
 

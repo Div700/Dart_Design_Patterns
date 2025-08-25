@@ -1,7 +1,10 @@
 import '../adaptees/juniper_router.dart';
 import '../constants/network_constants.dart';
-import '../interface/network_information.dart';
+import '../interfaces/network_information.dart';
 
+/* This is the adapter class that implements the NetworkInformation interface. It uses the JuniperRouter class (adaptee)
+ * to get the network information and then adapts it to the target interface.
+ */
 class JuniperNetworkAdapter implements NetworkInformation {
   final JuniperRouter juniperRouter = JuniperRouter();
 

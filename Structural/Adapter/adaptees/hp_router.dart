@@ -1,3 +1,6 @@
+
+/* This is the adaptee class that provides the network information. This class is a 3rd party or vendor specific library
+exposed by the HP Router to get its network information. */
 class HpRouter {
   String getHpNetworkInformation() {
     String hp_info = '''
