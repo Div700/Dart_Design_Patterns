@@ -58,14 +58,18 @@ void printRouterInfo(String name, Map<String, dynamic> routerInfo) {
 
 // Show all router statistics using adapter pattern
 void showOverallStatistics() {
-  print("\n=== Overall Network Statistics ===");
+  try {
+    print("\n=== Overall Network Statistics ===");
 
-  NetworkInformation networkInformation = CiscoNetworkAdapter();
-  printRouterInfo("Cisco Router", networkInformation.getNetworkInfo());
+    NetworkInformation networkInformation = CiscoNetworkAdapter();
+    printRouterInfo("Cisco Router", networkInformation.getNetworkInfo());
 
-  networkInformation = HpNetworkAdapter();
-  printRouterInfo("HP Router", networkInformation.getNetworkInfo());
+    networkInformation = HpNetworkAdapter();
+    printRouterInfo("HP Router", networkInformation.getNetworkInfo());
 
-  networkInformation = JuniperNetworkAdapter();
-  printRouterInfo("Juniper Router", networkInformation.getNetworkInfo());
+    networkInformation = JuniperNetworkAdapter();
+    printRouterInfo("Juniper Router", networkInformation.getNetworkInfo());
+  } catch (e) {
+    print("Error showing overall statistics: $e");
+  }
 }
