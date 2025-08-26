@@ -1,6 +1,6 @@
 // Composite class - Container for questions or other containers
-import 'interfaces/IContent.dart';
-import 'user_level_enums.dart';
+import '../interfaces/IContent.dart';
+import '../constants/user_level_enums.dart';
 
 class QuestionContainer implements LearningComponent {
   final String name;

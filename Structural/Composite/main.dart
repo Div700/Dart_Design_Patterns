@@ -1,6 +1,6 @@
-import 'container.dart';
-import 'question.dart';
-import 'user_level_enums.dart';
+import 'components/container.dart';
+import 'components/question.dart';
+import 'constants/user_level_enums.dart';
 
 void main() {
   // Create individual questions

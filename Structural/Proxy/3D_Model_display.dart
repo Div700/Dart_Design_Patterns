@@ -1,4 +1,4 @@
-import 'interfaces/IModel_3d.dart';
+import 'interfaces/i_model_3d.dart';
 
 class Model3d implements Imodel3d {
 

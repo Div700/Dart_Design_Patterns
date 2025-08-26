@@ -1,6 +1,6 @@
 // Leaf class - Individual Question
-import 'interfaces/IContent.dart';
-import 'user_level_enums.dart';
+import '../interfaces/IContent.dart';
+import '../constants/user_level_enums.dart';
 
 class Question implements LearningComponent {
   final String questionText;

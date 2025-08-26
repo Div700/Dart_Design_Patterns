@@ -1,6 +1,7 @@
-import '3D_Model_display.dart';
-import 'interfaces/IModel_3d.dart';
+import '3d_model_display.dart';
 import 'dart:math';
+
+import 'interfaces/i_model_3d.dart';
 
 class Model3dProxy implements Imodel3d {
   Model3d? _model;

@@ -1,5 +1,5 @@
-import 'map_icon_context.dart';
-import 'flyweight_factory.dart';
+import '../map_icon_context.dart';
+import '../flyweight_factory.dart';
 
 class MapRenderer {
   final List<IconContext> _contexts = [];

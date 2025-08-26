@@ -1,7 +1,7 @@
 import '../subsystems/audio_systems.dart';
 import '../subsystems/graphic_systems.dart';
 import '../subsystems/input_systems.dart';
-import '../utilities/game_state_enums.dart';
+import '../constants/game_state_enums.dart';
 
 class GameFacade {
   final GraphicsSystem _graphics = GraphicsSystem();

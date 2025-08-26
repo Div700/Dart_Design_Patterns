@@ -1,6 +1,6 @@
 import 'map_icon_context.dart';
-import 'map_renderer.dart';
-import 'memory_calculator.dart';
+import 'helpers/map_renderer.dart';
+import 'helpers/memory_calculator.dart';
 
 void main() {
   print('🗺️  Flyweight Pattern with Memory Usage Analysis\n');

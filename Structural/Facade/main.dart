@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'facade/game_facade.dart';
-import 'utilities/game_state_enums.dart';
+import 'constants/game_state_enums.dart';
 
 Future<void> main() async {
   final game = GameFacade();

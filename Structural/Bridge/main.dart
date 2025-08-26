@@ -7,8 +7,8 @@ import 'abstractions/ai_task.dart';
 import 'refined_abstractions/question_answer_task.dart';
 import 'refined_abstractions/text_summarization_task.dart';
 import 'refined_abstractions/code_generation_task.dart';
-import 'utilities/model_enums.dart';
-import 'utilities/ai_task_enums.dart';
+import 'constants/model_enums.dart';
+import 'constants/ai_task_enums.dart';
 
 Future<void> main() async {
   try {

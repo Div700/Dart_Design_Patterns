@@ -1,5 +1,5 @@
-import 'flyweight_factory.dart';
-import 'map_icon_context.dart';
+import '../flyweight_factory.dart';
+import '../map_icon_context.dart';
 
 class MemoryCalculator {
   static void printMemoryComparison(List<IconContext> locations) {

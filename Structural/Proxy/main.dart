@@ -1,4 +1,4 @@
-import '3D_Model_Proxy.dart';
+import '3d_Model_proxy.dart';
 
 void main() {
   print('🎮 3D Game World Virtual Proxy Demo\n');
