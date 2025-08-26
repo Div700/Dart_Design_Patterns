@@ -1,3 +1,4 @@
+// enums fo different task types that can be performed by the AI
 enum TaskType
 {
   questionAnswering("questionAnswering"),

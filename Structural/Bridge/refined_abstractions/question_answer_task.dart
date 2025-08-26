@@ -1,8 +1,10 @@
 import 'dart:async';
-import '../implementation/AIModel.dart';
-import 'AITask.dart';
+import '../implementations/ai_model.dart';
+import '../abstractions/ai_task.dart';
 
-/// Refined Abstraction #1
+/* This is the refined abstraction of the Bridge pattern.
+ * It is the concrete implementation of the AITask interface.
+ */
 class QuestionAnsweringTask extends AITask {
   QuestionAnsweringTask(AIModel model) : super(model);
 

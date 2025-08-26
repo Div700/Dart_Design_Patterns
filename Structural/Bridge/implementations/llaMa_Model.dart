@@ -1,7 +1,9 @@
 import 'dart:async';
-import 'AIModel.dart';
 
-/// Concrete Implementor #3
+import 'ai_model.dart';
+
+/* This is the concrete implementation of the AIModel interface.
+ */
 class LocalLlamaModel implements AIModel {
   @override
   Future<String> generateResponse(String prompt) async {

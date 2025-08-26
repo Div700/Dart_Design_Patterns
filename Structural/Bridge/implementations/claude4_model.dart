@@ -1,7 +1,8 @@
 import 'dart:async';
-import 'AIModel.dart';
+import 'ai_model.dart';
 
-/// Concrete Implementor #2
+/* This is the concrete implementation of the AIModel interface.
+ */
 class Claude4Model implements AIModel {
   @override
   Future<String> generateResponse(String prompt) async {

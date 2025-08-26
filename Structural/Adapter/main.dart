@@ -8,43 +8,50 @@ import 'interfaces/network_information.dart';
  * It uses the adapter pattern to convert the network information from the network devices to the standardized data format.
  */
 void main() {
-  String choice = "1";
+  try {
+    String choice = "1";
 
-  while (choice != "5") {
-    print("\n=== Network Monitoring System ===");
-    print("1. Show Cisco Router Info");
-    print("2. Show HP Router Info");
-    print("3. Show Juniper Router Info");
-    print("4. Show Overall Network Statistics");
-    print("5. Exit");
+    while (choice != "5") {
+      print("\n=== Network Monitoring System ===");
+      print("1. Show Cisco Router Info");
+      print("2. Show HP Router Info");
+      print("3. Show Juniper Router Info");
+      print("4. Show Overall Network Statistics");
+      print("5. Exit");
 
-    stdout.write("Enter your choice: ");
-    choice = stdin.readLineSync() ?? "1";
+      stdout.write("Enter your choice: ");
+      choice = stdin.readLineSync() ?? "1";
 
-    NetworkInformation networkInformation;
-    switch (choice) {
-      case "1":
-        // Adapter pattern: Cisco router data converted to standard format
-        networkInformation = CiscoNetworkAdapter();
-        printRouterInfo("Cisco Router", networkInformation.getNetworkInfo());
-        break;
-      case "2":
-        networkInformation = HpNetworkAdapter();
-        printRouterInfo("HP Router", networkInformation.getNetworkInfo());
-        break;
-      case "3":
-        networkInformation = JuniperNetworkAdapter();
-        printRouterInfo("Juniper Router", networkInformation.getNetworkInfo());
-        break;
-      case "4":
-        showOverallStatistics();
-        break;
-      case "5":
-        print("Exiting... Goodbye!");
-        break;
-      default:
-        print("Invalid choice. Try again.");
+      NetworkInformation networkInformation;
+      switch (choice) {
+        case "1":
+          // Adapter pattern: Cisco router data converted to standard format
+          networkInformation = CiscoNetworkAdapter();
+          printRouterInfo("Cisco Router", networkInformation.getNetworkInfo());
+          break;
+        case "2":
+          networkInformation = HpNetworkAdapter();
+          printRouterInfo("HP Router", networkInformation.getNetworkInfo());
+          break;
+        case "3":
+          networkInformation = JuniperNetworkAdapter();
+          printRouterInfo(
+            "Juniper Router",
+            networkInformation.getNetworkInfo(),
+          );
+          break;
+        case "4":
+          showOverallStatistics();
+          break;
+        case "5":
+          print("Exiting... Goodbye!");
+          break;
+        default:
+          print("Invalid choice. Try again.");
+      }
     }
+  } catch (e) {
+    print("Error in main: $e");
   }
 }
 

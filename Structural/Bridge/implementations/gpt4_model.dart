@@ -1,7 +1,8 @@
 import 'dart:async';
-import 'AIModel.dart';
+import 'ai_model.dart';
 
-/// Concrete Implementor #1
+/* This is the concrete implementation of the AIModel interface.
+ */
 class GPT4Model implements AIModel {
   @override
   Future<String> generateResponse(String prompt) async {
