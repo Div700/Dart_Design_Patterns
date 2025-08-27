@@ -1,4 +1,3 @@
-```markdown
 # YouTube Observer Pattern - Dart Implementation
 
 A simple demonstration of the Observer design pattern using a YouTube-like notification system built in Dart.
@@ -105,4 +104,3 @@ This pattern is used in:
 ## License
 
 This project is for educational purposes to demonstrate the Observer design pattern.
-```
