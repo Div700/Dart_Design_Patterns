@@ -43,9 +43,7 @@ lib/
 │   └── checkpoint_memento.dart      # Memento implementation
 ├── game_state_originator.dart       # Originator implementation
 └── checkpoint_caretaker.dart        # Caretaker implementation
-
-example/
-└── memento_pattern_demo.dart        # Pattern demonstration
+└── main.dart        # Pattern demonstration
 
 README.md                            # This documentation
 ```
