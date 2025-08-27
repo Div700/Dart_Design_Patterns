@@ -1,4 +1,3 @@
-```markdown
 # Question Container Strategy Pattern - Dart Implementation
 
 A simple implementation of the Strategy design pattern for arranging quiz questions using different learning strategies.
@@ -114,4 +113,3 @@ Question Sequence:
 ## Design Pattern
 
 **Strategy Pattern** - A behavioral design pattern that defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime.
-```
