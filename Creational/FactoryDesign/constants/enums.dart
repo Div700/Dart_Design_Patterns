@@ -1,1 +1,0 @@
-  enum AppState { menu, inQuiz }
