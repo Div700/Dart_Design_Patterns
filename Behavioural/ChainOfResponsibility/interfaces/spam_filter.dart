@@ -1,5 +1,6 @@
 import '../models/email.dart';
 
+/* This is the abstract class which defines the interface for all of the handlers. The method isSpam is overridden by the concrete handlers. */
 abstract class SpamFilter {
   SpamFilter? _nextFilter;
 

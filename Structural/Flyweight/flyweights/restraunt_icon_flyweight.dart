@@ -3,7 +3,7 @@ import '../interfaces/abstract_icon_flyweight.dart';
 
 class RestaurantIcon implements IconFlyweight {
   @override
-  String get iconSymbol => '🍽️';
+  String get iconSymbol => 'R';
   
   @override  
   String get iconColor => 'orange';

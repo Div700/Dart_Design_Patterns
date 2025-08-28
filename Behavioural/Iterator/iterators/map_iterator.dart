@@ -14,6 +14,7 @@ class MapIterator implements CartIterator{
 
   @override
   CartItem next() {
+    //defensive programming to check if the iterator has more items, because the next method is called without checking if the iterator has more items
     if (hasNext()) {
       List<String> keys = cartItems.keys.toList();
       CartItem item = cartItems[keys[currentIndex]]!;

@@ -11,6 +11,7 @@ class SpamDetector {
   late final UserRulesFilter _userRulesFilter;
 
   SpamDetector() {
+    //setting up the chain of spam filters
     _blacklistFilter = BlacklistFilter();
     _contentFilter = ContentFilter();
     _mlFilter = MlClassifierFilter();

@@ -10,7 +10,7 @@ class Ambulance extends Colleague {
   void receiveMessage(String message, Colleague sender) {
     print('$name (→ $hospitalDestination): Received message from ${sender.name}');
     print('   Message: $message');
-    
+    message = message.toLowerCase();
     // Ambulance-specific response logic
     if (message.contains('route') || message.contains('traffic')) {
       print('   $name: Noted, maintaining emergency priority');

@@ -26,7 +26,7 @@ class PlagiarismDetector implements ContentAnalyzer {
     try {
       print('PLAGIARISM: Checking quiz "${quiz.title}"');
 
-      // Simple check based on question count vs subject
+      // Simple check based on question count
       bool suspicious = quiz.questionCount < 5;
 
       if (suspicious) {

@@ -26,7 +26,7 @@ class MemoryCalculator {
     final totalWithoutFlyweight = totalLocations * memoryPerLocationWithoutFlyweight;
     
     // Print comparison
-    print('\n📊 MEMORY USAGE COMPARISON');
+    print('\nMEMORY USAGE COMPARISON');
     print('=' * 60);
     print('Total Locations: $totalLocations');
     print('Flyweight Types: $flyweightCount');
@@ -34,20 +34,20 @@ class MemoryCalculator {
     
     print('WITHOUT Flyweight Pattern:');
     print('  Each location stores full icon data: ${_formatBytes(memoryPerLocationWithoutFlyweight)}');
-    print('  Total memory: $totalLocations × ${_formatBytes(memoryPerLocationWithoutFlyweight)} = ${_formatBytes(totalWithoutFlyweight)}');
+    print('  Total memory: $totalLocations * ${_formatBytes(memoryPerLocationWithoutFlyweight)} = ${_formatBytes(totalWithoutFlyweight)}');
     print('');
     
     print('WITH Flyweight Pattern:');
-    print('  Shared flyweights: $flyweightCount × ${_formatBytes(10240)} = ${_formatBytes(flyweightMemory)}');
-    print('  Context instances: $totalLocations × ${_formatBytes(44)} = ${_formatBytes(contextMemory)}');
+    print('  Shared flyweights: $flyweightCount * ${_formatBytes(10240)} = ${_formatBytes(flyweightMemory)}');
+    print('  Context instances: $totalLocations * ${_formatBytes(44)} = ${_formatBytes(contextMemory)}');
     print('  Total memory: ${_formatBytes(totalWithFlyweight)}');
     print('');
     
     final savedMemory = totalWithoutFlyweight - totalWithFlyweight;
     final savedPercentage = ((savedMemory / totalWithoutFlyweight) * 100).toStringAsFixed(1);
     
-    print('💾 MEMORY SAVED: ${_formatBytes(savedMemory)} ($savedPercentage%)');
-    print('🚀 EFFICIENCY: ${(totalWithoutFlyweight / totalWithFlyweight).toStringAsFixed(1)}x more memory efficient');
+    print('MEMORY SAVED: ${_formatBytes(savedMemory)} ($savedPercentage%)');
+    print('EFFICIENCY: ${(totalWithoutFlyweight / totalWithFlyweight).toStringAsFixed(1)}x more memory efficient');
   }
   
   static String _formatBytes(int bytes) {

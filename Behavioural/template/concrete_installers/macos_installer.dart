@@ -4,27 +4,42 @@ import '../interfaces/software_installer.dart';
 class MacOSInstaller extends SoftwareInstallerBase {
   @override
   String? downloadSoftware(String softwareName) {
-    print('Downloading $softwareName for macOS...');
+    try {
+      print('Downloading $softwareName for macOS...');
 
-    String filePath = '/tmp/${softwareName}.dmg';
-    print('Downloaded disk image: $filePath');
-    return filePath;
+      String filePath = '/tmp/${softwareName}.dmg';
+      print('Downloaded disk image: $filePath');
+      return filePath;
+    } catch (e) {
+      print('Error downloading $softwareName: $e');
+      return null;
+    }
   }
 
   @override
   String installSoftware(String filePath) {
-    print('Installing from: $filePath');
+    try {
+      print('Installing from: $filePath');
 
-    String message = 'Mounted DMG, copied to Applications, updated PATH';
-    print('$message');
-    return message;
+      String message = 'Mounted DMG, copied to Applications, updated PATH';
+      print('$message');
+      return message;
+    } catch (e) {
+      print('Error installing $filePath: $e');
+      return 'Installation failed';
+    }
   }
 
   @override
   bool verifySoftware(String softwareName) {
-    print('Verifying $softwareName installation...');
+    try {
+      print('Verifying $softwareName installation...');
 
-    print('Available in: /Applications/$softwareName.app');
-    return true;
+      print('Available in: /Applications/$softwareName.app');
+      return true;
+    } catch (e) {
+      print('Error verifying $softwareName: $e');
+      return false;
+    }
   }
 }

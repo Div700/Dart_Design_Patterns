@@ -11,15 +11,15 @@ class IconFactory {
       switch (iconType) {
         case 'restaurant':
           _flyweights[iconType] = RestaurantIcon();
-          print('✨ Created RestaurantIcon flyweight (~10KB)');
+          print('Created RestaurantIcon flyweight (~10KB)');
           break;
         case 'gasstation':
           _flyweights[iconType] = GasStationIcon();
-          print('✨ Created GasStationIcon flyweight (~10KB)');
+          print('Created GasStationIcon flyweight (~10KB)');
           break;
         case 'hotel':
           _flyweights[iconType] = HotelIcon();
-          print('✨ Created HotelIcon flyweight (~10KB)');
+          print('Created HotelIcon flyweight (~10KB)');
           break;
         default:
           throw Exception('Unknown icon type: $iconType');

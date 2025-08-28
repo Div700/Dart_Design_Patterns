@@ -13,7 +13,7 @@ class CircuitBreakerContext {
   CircuitBreakerContext({
     this.failureThreshold = 3,
     this.timeoutDuration = const Duration(seconds: 5),
-  }) : _currentState = ClosedState();
+  }) : _currentState = ClosedState(); //initial state is closed
 
   void transitionTo(CircuitBreakerState newState) {
     _currentState = newState;

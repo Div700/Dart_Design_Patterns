@@ -74,35 +74,4 @@ void main() {
   for (int i = 0; i < linearSequence.length; i++) {
     print('  ${i + 1}. ${linearSequence[i]}');
   }
-
-  // Show strategy comparison
-  print('\n--- STRATEGY COMPARISON ---');
-  print('Bayes Strategy: Adaptive learning (medium → easy → hard)');
-  print('  - Builds confidence with medium difficulty');
-  print('  - Reinforces with easy questions');
-  print('  - Challenges with hard questions');
-
-  print('Linear Strategy: Progressive learning (easy → hard)');
-  print('  - Systematic difficulty progression');
-  print('  - Traditional learning approach');
-
-  // Demonstrate with combined questions
-  print('\n--- COMBINED CONTAINER DEMO ---');
-  final allQuestions = [...mathQuestions, ...scienceQuestions];
-
-  final combinedContainer = QuestionContainer(
-    containerName: 'Combined Quiz Container',
-    questions: allQuestions,
-    strategyType: 'bayes',
-    parameters: {'mixedTopics': true, 'totalQuestions': allQuestions.length},
-  );
-
-  combinedContainer.showContainerInfo();
-  print('');
-
-  final combinedSequence = combinedContainer.generateQuestionSequence();
-  print('Combined Question Sequence:');
-  for (int i = 0; i < combinedSequence.length; i++) {
-    print('  ${i + 1}. ${combinedSequence[i]}');
-  }
 }

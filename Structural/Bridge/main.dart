@@ -24,7 +24,7 @@ Future<void> main() async {
       print('  2) Claude-4');
       print('  3) Local LLaMA');
       print('  0) Exit');
-      stdout.write('Choice (0–3): ');
+      stdout.write('Choice (0-3): ');
       final modelChoice = stdin.readLineSync();
 
       if (modelChoice == '0') {

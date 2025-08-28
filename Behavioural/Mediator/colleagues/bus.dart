@@ -10,7 +10,7 @@ class Bus extends Colleague {
   void receiveMessage(String message, Colleague sender) {
     print('$name (Route $route): Received message from ${sender.name}');
     print('   Message: $message');
-    
+    message = message.toLowerCase();
     // Bus-specific response logic
     if (message.contains('emergency')) {
       print('   $name: Pulling over to let emergency vehicle pass');

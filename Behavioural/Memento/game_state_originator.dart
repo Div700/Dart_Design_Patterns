@@ -2,7 +2,7 @@ import 'models/player.dart';
 import 'memento/checkpoint_memento.dart';
 
 class GameStateOriginator {
-  Player player;
+  Player player; //this is the object that we are going to save the state of
 
   GameStateOriginator({required this.player});
 

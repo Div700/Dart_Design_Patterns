@@ -3,7 +3,7 @@ import 'helpers/map_renderer.dart';
 import 'helpers/memory_calculator.dart';
 
 void main() {
-  print('🗺️  Flyweight Pattern with Memory Usage Analysis\n');
+  print('Flyweight Pattern with Memory Usage Analysis\n');
 
   final renderer = MapRenderer();
   final locations = <IconContext>[];
@@ -46,16 +46,16 @@ void main() {
     locations.add(location);
   }
 
-  print('📍 Added ${locations.length} locations');
+  print('Added ${locations.length} locations');
 
   // Show memory usage comparison
   MemoryCalculator.printMemoryComparison(locations);
 
-  print('\n🗺️  Sample rendering (first 5 locations):');
+  print('\nSample rendering (first 5 locations):');
   print('=' * 50);
   for (int i = 0; i < 5 && i < locations.length; i++) {
     locations[i].render();
   }
 
-  print('\n💡 All ${locations.length} locations use only 3 flyweight objects!');
+  print('\nAll ${locations.length} locations use only 3 flyweight objects!');
 }

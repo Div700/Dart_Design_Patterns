@@ -42,7 +42,8 @@ class Database {
     if (_records.isEmpty) {
       return 'No records found in database';
     }
-
+    
+    // string buffer is an efficient way of concatenating the strings, because it avoids creating a new string object everytime we concatenate or assign it to another variable 
     final buffer = StringBuffer();
     buffer.writeln('Database Records:');
     for (int i = 0; i < _records.length; i++) {

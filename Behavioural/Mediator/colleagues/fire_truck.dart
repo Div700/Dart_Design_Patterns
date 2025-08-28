@@ -10,7 +10,7 @@ class FireTruck extends Colleague {
   void receiveMessage(String message, Colleague sender) {
     print('$name (→ $emergencyLocation): Received message from ${sender.name}');
     print('   Message: $message');
-    
+    message = message.toLowerCase();
     // FireTruck-specific response logic
     if (message.contains('emergency')) {
       print('   $name: Coordinating emergency response');

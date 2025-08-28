@@ -2,7 +2,7 @@ import '../interfaces/abstract_icon_flyweight.dart';
 
 class HotelIcon implements IconFlyweight {
   @override
-  String get iconSymbol => '🏨';
+  String get iconSymbol => 'H';
   
   @override
   String get iconColor => 'purple';

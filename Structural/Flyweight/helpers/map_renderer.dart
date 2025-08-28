@@ -9,14 +9,14 @@ class MapRenderer {
   }
 
   void renderAll() {
-    print('\n🗺️  Rendering Map');
+    print('\nRendering Map');
     print('=' * 50);
     
     for (final context in _contexts) {
       context.render(); // Context handles positioning
     }
     
-    print('\n📊 Contexts: ${_contexts.length}');
-    print('📊 Flyweights created: ${IconFactory.getFlyweightCount()}');
+    print('\nContexts: ${_contexts.length}');
+    print('Flyweights created: ${IconFactory.getFlyweightCount()}');
   }
 }

@@ -2,7 +2,7 @@ import '../interfaces/abstract_icon_flyweight.dart';
 
 class GasStationIcon implements IconFlyweight {
   @override
-  String get iconSymbol => '⛽';
+  String get iconSymbol => 'G';
   
   @override
   String get iconColor => 'blue';
