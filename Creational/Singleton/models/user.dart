@@ -10,12 +10,12 @@ class User {
   int _noFollowing;
 
   User(String name)
-      : _userName = name,
-        _followers = <User>[],
-        _following = <User>[],
-        _noFollowers = 0,
-        _noPosts = 0,
-        _noFollowing = 0 {
+    : _userName = name,
+      _followers = <User>[],
+      _following = <User>[],
+      _noFollowers = 0,
+      _noPosts = 0,
+      _noFollowing = 0 {
     PostManager.getPostManager().addUsers(this);
   }
 
@@ -32,7 +32,7 @@ class User {
     _followers.add(newFollower);
   }
 
-  // Function to make a new post  
+  // Function to make a new post
   void post(int photos) {
     Post newPost = Post(photos, this, _noPosts + 1);
     _noPosts = _noPosts + 1;

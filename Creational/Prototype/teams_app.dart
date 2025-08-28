@@ -67,7 +67,7 @@ void main() async {
         }
 
         // Cloning the main team object instead of creating a new one
-        commonTeam = t.clone();
+        commonTeam = t.clone() as Team;
         print('Enter the name of common team class');
         String? name = stdin.readLineSync();
         print('Enter the id of common team class');

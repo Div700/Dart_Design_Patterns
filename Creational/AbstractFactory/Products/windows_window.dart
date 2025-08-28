@@ -1,4 +1,4 @@
-import '../interfaces/Window.dart';
+import '../interfaces/window.dart';
 
 class Windowswindow implements Window {
   @override

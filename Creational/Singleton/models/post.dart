@@ -42,23 +42,6 @@ class Post {
   set comments(Map<User, String> comments) => _comments = comments;
   set likedUsers(List<User> likedUsers) => _likedUsers = likedUsers;
 
-  User getInstaId() => _instaId;
-  void setInstaId(User instaId) => _instaId = instaId;
-
-  int getPhotos() => _photos;
-  void setPhotos(int photos) => _photos = photos;
-
-  int getNoLikes() => _noLikes;
-  void setNoLikes(int noLikes) => _noLikes = noLikes;
-
-  Map<User, String> getComments() => _comments;
-  void setComments(Map<User, String> comments) => _comments = comments;
-
-  List<User> getLikedUsers() => _likedUsers;
-  void setLikedUsers(List<User> likedUsers) => _likedUsers = likedUsers;
-
-  int getPostId() => _postId;
-
   @override
   String toString() {
     return 'Post{postId: $_postId, photoCount: $_photos, likes: $_noLikes, comments: $_comments}';

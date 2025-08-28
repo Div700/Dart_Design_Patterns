@@ -1,4 +1,4 @@
-import '../interfaces/Button.dart';
+import '../interfaces/button.dart';
 
 class Linuxbutton implements Button {
   @override

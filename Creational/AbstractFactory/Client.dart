@@ -1,8 +1,8 @@
-import 'Factories/LinuxFactory.dart';
-import 'Factories/WindowsFactory.dart';
-import 'interfaces/AbstractFactory.dart';
-import 'interfaces/Button.dart';
-import 'interfaces/Window.dart';
+import 'Factories/linux_factory.dart';
+import 'Factories/windows_factory.dart';
+import 'interfaces/abstract_factory.dart';
+import 'interfaces/button.dart';
+import 'interfaces/window.dart';
 
 void main() {
   print("Welcome to the UI emulator");
@@ -17,7 +17,7 @@ void main() {
   button.onHover();
   window = abstractfactory.createWindow();
   window.background();
-
+  print("Rendering UI for Linux : ");
   abstractfactory = Linuxfactory();
   button = abstractfactory.createButton();
   button.onClick();

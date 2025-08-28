@@ -6,7 +6,7 @@ import 'builders/underground_level_builder.dart';
 import 'product/mario_level.dart';
 
 void main() {
-  print('🍄 Mario Level Builder Demo 🍄\n');
+  print('Mario Level Builder Demo\n');
 
   // Create different level builders
   MarioLevelBuilder groundBuilder = GroundLevelBuilder();
@@ -31,22 +31,8 @@ void main() {
       .build();
   world14.displayLevel();
 
-  // Demonstrate flexibility - create a level directly using public constructor
-  print('🔧 Creating a custom level directly (using public constructor):\n');
-  MarioLevel customLevel = MarioLevel(
-    name: 'Custom Test Level',
-    backgroundTheme: 'Rainbow sky with candy platforms',
-    platforms: ['Candy platform 1', 'Cloud platform 2'],
-    enemies: ['Friendly Goomba', 'Dancing Koopa'],
-    powerUps: ['Super Star'],
-    coins: ['Golden coin 1', 'Golden coin 2', 'Golden coin 3'],
-    music: 'Upbeat Custom Track',
-    timeLimit: '999 seconds',
-  );
-  customLevel.displayLevel();
-
   // Show that you can reuse builders
-  print('🔄 Reusing Ground Level Builder for another level:\n');
+  print('Reusing Ground Level Builder for another level:\n');
   MarioLevel world51 = groundBuilder
       .setName('World 5-1')
       .build();

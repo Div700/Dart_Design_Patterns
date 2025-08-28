@@ -50,7 +50,8 @@ class Team implements TeamStructure {
   }
 
   // Deep clone method (Prototype Pattern)
-  Team clone() {
+  @override
+  TeamStructure clone() {
     print('Cloning of the team object');
     Team clonedTeam = Team();
     clonedTeam.teamName = _teamName;
