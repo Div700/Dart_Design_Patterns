@@ -83,17 +83,17 @@ MapIterator (Concrete Iterator)
 
 ### Key Features
 
-#### 🔄 **Uniform Iteration Interface**
+#### **Uniform Iteration Interface**
 - Same iteration code works for List and Map storage
 - Client doesn't need to know underlying data structure
 - Consistent `hasNext()` and `next()` pattern
 
-#### 📦 **Multiple Storage Strategies**
+#### **Multiple Storage Strategies**
 - **List Storage**: Simple indexed access, maintains order
 - **Map Storage**: Key-based access, allows named retrieval
 - **Transparent Access**: Iterator hides implementation differences
 
-#### 🎯 **Encapsulation**
+#### **Encapsulation**
 - Internal collection structure remains private
 - Iterator provides controlled access to elements
 - Collection can change implementation without affecting clients
@@ -126,7 +126,7 @@ while (mapIterator.hasNext()) {
 
 ## Benefits
 
-### ✅ Advantages
+### Advantages
 
 1. **Uniform Interface**: Same iteration code works across different collections
 2. **Encapsulation**: Internal collection structure remains hidden
@@ -134,7 +134,7 @@ while (mapIterator.hasNext()) {
 4. **Single Responsibility**: Iterator handles traversal, collection handles storage
 5. **Multiple Iterators**: Can have multiple iterators over same collection
 
-### ⚠️ Considerations
+### Considerations
 
 1. **Overhead**: Extra classes and interfaces add complexity
 2. **Memory Usage**: Iterator objects consume additional memory
@@ -143,7 +143,7 @@ while (mapIterator.hasNext()) {
 
 ## When to Use
 
-### ✅ Use Iterator When:
+### Use Iterator When:
 
 - You need to traverse collections without exposing their internal structure
 - You want to support multiple traversal algorithms
@@ -151,7 +151,7 @@ while (mapIterator.hasNext()) {
 - You want to separate traversal logic from collection logic
 - Collections might change their internal representation
 
-### ❌ Avoid Iterator When:
+### Avoid Iterator When:
 
 - You're working with simple, small collections where direct access is sufficient
 - Performance is critical and the overhead isn't justified
