@@ -83,7 +83,7 @@ print(result.toString());
 
 ## Benefits
 
-### ✅ Advantages
+### Advantages
 
 1. **Code Reuse**: Common algorithm structure is implemented once
 2. **Consistency**: All implementations follow the same pattern
@@ -91,7 +91,7 @@ print(result.toString());
 4. **Extensibility**: Easy to add new platform implementations
 5. **Inversion of Control**: The base class controls when and how steps are executed
 
-### ⚠️ Considerations
+### Considerations
 
 1. **Inheritance Limitation**: Requires inheritance, which can be limiting in some cases
 2. **Complexity**: Can make the code more complex for simple algorithms
@@ -99,14 +99,14 @@ print(result.toString());
 
 ## When to Use
 
-### ✅ Use Template Method When:
+### Use Template Method When:
 
 - You have multiple classes with similar algorithms that differ only in specific steps
 - You want to control the overall algorithm flow while allowing customization of individual steps
 - You need to avoid code duplication in similar algorithms
 - You want to provide a framework that others can extend with specific implementations
 
-### ❌ Avoid Template Method When:
+### Avoid Template Method When:
 
 - The algorithm steps are completely different between implementations
 - You need more flexibility than inheritance provides (consider Strategy pattern)
