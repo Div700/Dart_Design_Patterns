@@ -1,3 +1,4 @@
+import 'interfaces/browser.dart';
 import 'models/extension.dart';
 import 'components/browser.dart';
 import 'decorators/extension_decorator.dart';
@@ -7,7 +8,7 @@ void main() {
   print('=== CHROME BROWSER DECORATOR PATTERN ===\n');
 
   // Create base browser
-  final baseBrowser = GoogleChrome();
+  Browser baseBrowser = GoogleChrome();
   print('\n--- BASE BROWSER ---');
   baseBrowser.renderChrome();
 

@@ -7,16 +7,14 @@ Future<void> main() async {
 
   print('Simple Game Engine Demo');
   print('Demonstrates Facade Design Pattern\n');
-
-  while (true) {
+  String choice = '';
+  while (choice != '3') {
     _showMenu(game);
 
     stdout.write('Choice: ');
     final choice = stdin.readLineSync()?.trim() ?? '';
 
     await _handleChoice(game, choice);
-
-    if (choice == '3') break;
 
     print('Press Enter...');
     stdin.readLineSync();

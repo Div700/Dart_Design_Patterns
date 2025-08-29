@@ -22,10 +22,9 @@ class MemoryCalculator {
     
     // Calculate memory WITHOUT flyweight pattern (hypothetical)
     // Each location would store its own copy of icon data
-    final memoryPerLocationWithoutFlyweight = 10240 + 44; // 10KB icon + 44 bytes context
+    final memoryPerLocationWithoutFlyweight = 10240 + 44; // intrinsic + extrinsic
     final totalWithoutFlyweight = totalLocations * memoryPerLocationWithoutFlyweight;
     
-    // Print comparison
     print('\nMEMORY USAGE COMPARISON');
     print('=' * 60);
     print('Total Locations: $totalLocations');

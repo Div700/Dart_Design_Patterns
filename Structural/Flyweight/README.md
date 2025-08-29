@@ -35,9 +35,9 @@ IconFlyweight (Interface)
 └── getMemoryFootprint() : int
 
 Concrete Flyweights:
-├── RestaurantIcon (🍽️ orange 24px)
-├── GasStationIcon (⛽ blue 22px)  
-└── HotelIcon (🏨 purple 26px)
+├── RestaurantIcon (orange 24px)
+├── GasStationIcon (blue 22px)  
+└── HotelIcon (purple 26px)
 
 IconFactory
 ├── _flyweights : Map<String, IconFlyweight>
@@ -60,9 +60,9 @@ IconContext
    - Provides display operations
 
 2. **Concrete Flyweights**: Icon implementations
-   - **RestaurantIcon**: 🍽️ orange 24px (~10KB)
-   - **GasStationIcon**: ⛽ blue 22px (~10KB)
-   - **HotelIcon**: 🏨 purple 26px (~10KB)
+   - **RestaurantIcon**: orange 24px (~10KB)
+   - **GasStationIcon**: blue 22px (~10KB)
+   - **HotelIcon**: purple 26px (~10KB)
 
 3. **Flyweight Factory**: `IconFactory`
    - Manages flyweight instances using singleton pattern
@@ -76,17 +76,17 @@ IconContext
 
 ### Key Features
 
-#### 💾 **Memory Optimization**
+#### **Memory Optimization**
 - **Intrinsic State**: Icon properties shared among all instances of same type
 - **Extrinsic State**: Location-specific data stored in context
 - **Sharing**: Multiple contexts reference same flyweight object
 
-#### 📊 **Memory Comparison**
+#### **Memory Comparison**
 - **Without Flyweight**: 180 locations × 10.04KB = ~1.8MB
 - **With Flyweight**: 3 flyweights × 10KB + 180 contexts × 44 bytes = ~37KB
 - **Memory Saved**: ~98% reduction (48x more efficient)
 
-#### 🏭 **Factory Management**
+#### **Factory Management**
 - Centralized flyweight creation and management
 - Automatic reuse of existing flyweight instances
 - Runtime statistics for monitoring
@@ -125,7 +125,7 @@ gasStation.render();  // ⛽ [blue, 22px] at Shell Station
 
 ## Benefits
 
-### ✅ Advantages
+### Advantages
 
 1. **Massive Memory Savings**: 98% memory reduction in this example
 2. **Improved Performance**: Fewer objects mean better cache efficiency
@@ -133,7 +133,7 @@ gasStation.render();  // ⛽ [blue, 22px] at Shell Station
 4. **Centralized Management**: Factory pattern simplifies flyweight lifecycle
 5. **Transparency**: Context objects work normally despite sharing flyweights
 
-### ⚠️ Considerations
+### Considerations
 
 1. **Complexity**: Adds layer of abstraction between objects and data
 2. **Context Overhead**: Need to pass extrinsic state to flyweight methods
@@ -142,7 +142,7 @@ gasStation.render();  // ⛽ [blue, 22px] at Shell Station
 
 ## When to Use
 
-### ✅ Use Flyweight When:
+### Use Flyweight When:
 
 - Application needs to spawn huge numbers of similar objects
 - Storage costs are high due to sheer quantity of objects
@@ -150,7 +150,7 @@ gasStation.render();  // ⛽ [blue, 22px] at Shell Station
 - Extrinsic state can be moved out of objects
 - Object identity isn't important to application logic
 
-### ❌ Avoid Flyweight When:
+### Avoid Flyweight When:
 
 - Application doesn't use large numbers of objects
 - Extrinsic state can't be easily separated

@@ -1,13 +1,10 @@
 import 'dart:io';
 import 'models/post.dart';
 import 'models/user.dart';
-import 'database/post_manager.dart';
 
 void main() async {
   // HashMap to store the users objects
   Map<String, User> users = <String, User>{};
-
-  PostManager.getPostManager('MongoDB');
 
   print("Create different users: ");
   int choice = 1;

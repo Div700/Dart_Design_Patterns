@@ -16,7 +16,7 @@ class User {
       _noFollowers = 0,
       _noPosts = 0,
       _noFollowing = 0 {
-    PostManager.getPostManager().addUsers(this);
+    PostManager.instance.addUsers(this);
   }
 
   // Function to follow a new user
@@ -36,14 +36,14 @@ class User {
   void post(int photos) {
     Post newPost = Post(photos, this, _noPosts + 1);
     _noPosts = _noPosts + 1;
-    PostManager manager = PostManager.getPostManager();
+    PostManager manager = PostManager.instance;
     manager.createNewPost(this, newPost);
   }
 
   // Function to get the posts for the user
   List<Post>? _getUserPosts(User u) {
     // Using singleton post manager to retrieve data
-    PostManager manager = PostManager.getPostManager();
+    PostManager manager = PostManager.instance;
     return manager.getPosts(u);
   }
 

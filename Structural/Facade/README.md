@@ -119,7 +119,7 @@ await game.stopGame();   // Cleanly shuts down all systems
 
 ## Benefits
 
-### ✅ Advantages
+### Advantages
 
 1. **Simplified Interface**: Complex operations reduced to simple method calls
 2. **Reduced Coupling**: Clients don't depend on subsystem internals
@@ -136,7 +136,7 @@ await game.stopGame();   // Cleanly shuts down all systems
 
 ## When to Use
 
-### ✅ Use Facade When:
+### Use Facade When:
 
 - You want to provide a simple interface to a complex subsystem
 - There are many dependencies between clients and implementation classes
@@ -144,7 +144,7 @@ await game.stopGame();   // Cleanly shuts down all systems
 - The subsystem is complex and difficult to use directly
 - You need different levels of access to the subsystem
 
-### ❌ Avoid Facade When:
+### Avoid Facade When:
 
 - The subsystem is already simple and easy to use
 - Clients need fine-grained control over subsystem components

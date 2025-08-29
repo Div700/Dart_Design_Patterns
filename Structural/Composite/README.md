@@ -75,17 +75,17 @@ UserLevel (Enum)
 
 ### Key Features
 
-#### 🌳 **Hierarchical Structure**
+#### **Hierarchical Structure**
 - **Questions**: Individual learning items (leaves)
 - **Containers**: Groups of questions or other containers (composites)  
 - **Nested Containers**: Containers can contain other containers for complex hierarchies
 
-#### ⏱️ **Uniform Time Calculation**
+#### **Uniform Time Calculation**
 - **Question Level**: Returns specific time for user level
 - **Container Level**: Aggregates time from all child components
 - **Recursive Processing**: Automatically handles nested structures
 
-#### 📊 **Skill-Based Estimation**
+#### **Skill-Based Estimation**
 - **Beginner**: Longer time estimates for complex concepts
 - **Intermediate**: Moderate time estimates
 - **Advanced**: Shorter time estimates for familiar concepts
@@ -131,7 +131,7 @@ Duration courseTime = fullCourse.getTimeTakenToComplete(UserLevel.Beginner);    
 
 ## Benefits
 
-### ✅ Advantages
+### Advantages
 
 1. **Uniform Interface**: Same operations work on individual items and groups
 2. **Simplified Client Code**: No need to distinguish between leaves and composites
@@ -139,7 +139,7 @@ Duration courseTime = fullCourse.getTimeTakenToComplete(UserLevel.Beginner);    
 4. **Easy Extension**: Simple to add new component types
 5. **Flexible Hierarchies**: Can create arbitrarily complex tree structures
 
-### ⚠️ Considerations
+### Considerations
 
 1. **Overly General Design**: Makes it harder to restrict component types
 2. **Type Safety**: Interface must be general enough for all component types
@@ -148,14 +148,14 @@ Duration courseTime = fullCourse.getTimeTakenToComplete(UserLevel.Beginner);    
 
 ## When to Use
 
-### ✅ Use Composite When:
+### Use Composite When:
 
 - You want to represent part-whole hierarchies of objects
 - You want clients to ignore the difference between individual objects and compositions
 - The structure can be represented as a tree
 - You want to apply the same operations to individual objects and groups
 
-### ❌ Avoid Composite When:
+### Avoid Composite When:
 
 - You don't have hierarchical structures
 - Operations are fundamentally different for leaves vs composites

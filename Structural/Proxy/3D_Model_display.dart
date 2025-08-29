@@ -1,5 +1,6 @@
 import 'interfaces/i_model_3d.dart';
 
+// the real object
 class Model3d implements Imodel3d {
 
   final String modelName;

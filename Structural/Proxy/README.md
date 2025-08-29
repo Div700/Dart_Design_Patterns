@@ -69,17 +69,17 @@ Model3dProxy (Proxy)
 
 ### Key Features
 
-#### 🎯 **Distance-Based Loading**
+#### **Distance-Based Loading**
 - **View Distance**: 15 units from player position
 - **Lazy Loading**: Models only created when needed
 - **Performance Optimization**: Avoids loading distant objects
 
-#### 📐 **Distance Calculation**
+#### **Distance Calculation**
 - Uses Pythagorean theorem: `sqrt((x2-x1)² + (y2-y1)²)`
 - Real-time distance checking on each render call
 - Efficient coordinate-based positioning system
 
-#### 🚶 **Player Movement System**
+#### **Player Movement System**
 - Static player position tracking
 - Dynamic view distance calculations
 - Models automatically load/unload as player moves
@@ -105,7 +105,7 @@ car.render();      // Distance 64.0 - too far, no longer rendered
 
 ## Benefits
 
-### ✅ Advantages
+### Advantages
 
 1. **Memory Efficiency**: Only loads objects when actually needed
 2. **Performance Optimization**: Avoids expensive operations for distant objects
@@ -113,7 +113,7 @@ car.render();      // Distance 64.0 - too far, no longer rendered
 4. **Scalability**: Can handle thousands of objects without performance degradation
 5. **Flexible Control**: Easy to modify loading criteria (distance, visibility, etc.)
 
-### ⚠️ Considerations
+### Considerations
 
 1. **Complexity**: Adds an extra layer of indirection
 2. **Latency**: First-time loading may cause slight delays
@@ -122,7 +122,7 @@ car.render();      // Distance 64.0 - too far, no longer rendered
 
 ## When to Use
 
-### ✅ Use Proxy When:
+### Use Proxy When:
 
 - Objects are expensive to create or maintain in memory
 - You need lazy initialization for performance reasons
@@ -130,7 +130,7 @@ car.render();      // Distance 64.0 - too far, no longer rendered
 - Working with remote objects or resources
 - You need to cache expensive operations
 
-### ❌ Avoid Proxy When:
+### Avoid Proxy When:
 
 - Objects are lightweight and cheap to create
 - Direct access is simpler and performance isn't a concern
