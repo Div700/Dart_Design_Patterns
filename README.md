@@ -1,4 +1,4 @@
-# 🎯 Dart Design Patterns
+# Dart Design Patterns
 
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +6,7 @@
 
 A comprehensive implementation of classic **Gang of Four (GoF) Design Patterns** in **Dart programming language**. This repository demonstrates the practical application of design patterns through real-world examples and interactive console applications.
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Implemented Patterns](#implemented-patterns)
@@ -20,24 +20,24 @@ A comprehensive implementation of classic **Gang of Four (GoF) Design Patterns**
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🚀 Overview
+## Overview
 
 This project implements **11 essential design patterns** from the famous Gang of Four book, organized into two main categories:
 
 - **5 Creational Patterns**: Focus on object creation mechanisms
 - **6 Structural Patterns**: Deal with object composition and relationships
 
-### ✨ What Makes This Repository Special
+### What Makes This Repository Special
 
-- 📚 **Real-world examples**: Each pattern solves actual programming problems
-- 🎮 **Interactive demos**: Console applications you can run and explore
-- 📖 **Extensive documentation**: Clear explanations and code comments
-- 🧪 **Practical scenarios**: Network management, game development, UI frameworks
-- 🎯 **Learning-focused**: Perfect for students and professionals
+- **Real-world examples**: Each pattern solves actual programming problems
+- **Interactive demos**: Console applications you can run and explore
+- **Extensive documentation**: Clear explanations and code comments
+- **Practical scenarios**: Network management, game development, UI frameworks
+- **Learning-focused**: Perfect for students and professionals
 
-## 🏗️ Implemented Patterns
+## Implemented Patterns
 
-### 🎨 Creational Patterns
+### Creational Patterns
 
 | Pattern | Implementation | Real-World Use Case |
 |---------|---------------|-------------------|
@@ -47,7 +47,7 @@ This project implements **11 essential design patterns** from the famous Gang of
 | [**Prototype**](Creational/Prototype/) | Team Structure Cloner | Cloning organizational structures |
 | [**Singleton**](Creational/Singleton/) | Database Manager | Single instance resource management |
 
-### 🏢 Structural Patterns
+### Structural Patterns
 
 | Pattern | Implementation | Real-World Use Case |
 |---------|---------------|-------------------|
@@ -58,7 +58,7 @@ This project implements **11 essential design patterns** from the famous Gang of
 | [**Flyweight**](Structural/Flyweight/) | Map Icon Renderer | Memory-efficient icon sharing |
 | [**Proxy**](Structural/Proxy/) | 3D Model Loader | Lazy loading of expensive resources |
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 # Clone the repository
@@ -81,7 +81,7 @@ dart run game_runner.dart
 
 ```
 Dart_Design_Patterns/
-├── 🎨 Creational/
+├── Creational/
 │   ├── AbstractFactory/           # Cross-platform UI components
 │   │   ├── Client.dart           # Demo application
 │   │   ├── Factories/            # Concrete factories
@@ -102,7 +102,7 @@ Dart_Design_Patterns/
 │   └── Singleton/                # Social media app
 │       ├── insta_app.dart        # Main application
 │       └── database/             # Singleton manager
-├── 🏢 Structural/
+├── Structural/
 │   ├── Adapter/                  # Network integration
 │   │   ├── main.dart             # Network monitor demo
 │   │   ├── adapters/             # Adapter implementations
@@ -126,10 +126,10 @@ Dart_Design_Patterns/
 │   └── Proxy/                    # 3D model loading
 │       ├── client.dart           # 3D viewer demo
 │       └── interfaces/           # Model interface
-└── 📚 README.md                  # This file
+└── README.md                  # This file
 ```
 
-## 🎯 Pattern Examples
+## Pattern Examples
 
 ### Adapter Pattern - Network Integration
 **Problem**: Different router vendors (Cisco, HP, Juniper) provide network data in incompatible formats.
@@ -159,7 +159,7 @@ PostManager manager = PostManager.getPostManager('MongoDB');
 // Always returns the same instance
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Dart SDK**: Version 2.12 or higher
 - **Git**: For cloning the repository
@@ -183,7 +183,7 @@ sudo apt-get update
 sudo apt-get install dart
 ```
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone Repository
 ```bash
@@ -210,7 +210,7 @@ dart --version
 # Should show Dart SDK version 2.12.0 or higher
 ```
 
-## 🎮 Usage Examples
+## Usage Examples
 
 ### Running Individual Patterns
 
@@ -288,9 +288,9 @@ Network_Health : 95%
 
 #### Builder Pattern Demo
 ```
-🍄 Mario Level Builder Demo 🍄
+Mario Level Builder Demo 
 
-🏰 Building World 1-4 (Castle Level)
+Building World 1-4 (Castle Level)
 Background: Dark castle walls with lava pits
 Platforms: Drawbridge, Stone platform 1, Stone platform 2
 Enemies: Bowser, Fire bar 1, Fire bar 2
