@@ -100,7 +100,3 @@ This pattern is used in:
 ## Requirements
 
 - Dart SDK 2.17.0 or higher
-
-## License
-
-This project is for educational purposes to demonstrate the Observer design pattern.
