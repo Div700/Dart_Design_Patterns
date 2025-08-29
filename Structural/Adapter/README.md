@@ -1,10 +1,10 @@
-# 🔌 Adapter Design Pattern - Network Router Integration
+# Adapter Design Pattern - Network Router Integration
 
-## 📖 Overview
+## Overview
 
 The **Adapter Pattern** is a structural design pattern that allows objects with incompatible interfaces to collaborate. It acts as a bridge between two incompatible interfaces by wrapping one of the objects and providing a compatible interface.
 
-## 🎯 Problem Statement
+## Problem Statement
 
 In network management systems, different router manufacturers (Cisco, HP, Juniper) provide their network information in completely different formats:
 
@@ -13,12 +13,12 @@ In network management systems, different router manufacturers (Cisco, HP, Junipe
 - **Juniper**: Returns data as a `Map<String, dynamic>` but with **different key names**
 
 Without the Adapter pattern, the client would need to handle each vendor's format separately, leading to:
-- ❌ **Code duplication**
-- ❌ **Tight coupling** between client and vendor-specific classes
-- ❌ **Maintenance nightmare** when adding new vendors
-- ❌ **Violation of Open/Closed Principle**
+- **Code duplication**
+- **Tight coupling** between client and vendor-specific classes
+- **Maintenance nightmare** when adding new vendors
+- **Violation of Open/Closed Principle**
 
-## 💡 Solution: Adapter Pattern
+## Solution: Adapter Pattern
 
 The Adapter pattern solves this by:
 1. **Defining a common interface** (`NetworkInformation`) that the client expects
@@ -26,7 +26,7 @@ The Adapter pattern solves this by:
 3. **Wrapping vendor-specific objects** and translating their data to the common format
 4. **Allowing the client** to work with all vendors through the same interface
 
-## 🏗️ Implementation Structure
+## Implementation Structure
 
 ### Core Components
 
@@ -158,7 +158,7 @@ class JuniperNetworkAdapter implements NetworkInformation {
 }
 ```
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 - **Dart SDK** (version 2.12 or higher)
@@ -183,7 +183,7 @@ dart pub get
 dart run main.dart
 ```
 
-## 🎮 Usage Example
+## Usage Example
 
 ### Interactive Menu System
 ```
@@ -218,7 +218,7 @@ SecurityStatus : High
 Network_Health : 95%
 ```
 
-## 📊 Key Benefits Demonstrated
+## Key Benefits Demonstrated
 
 ### 1. **Uniform Interface** 
 All routers provide the same data structure:
@@ -253,24 +253,24 @@ All adapters provide consistent error handling:
 
 ### 4. **Extensibility**
 Adding a new vendor requires only:
-- ✅ Creating a new adaptee class
-- ✅ Creating a new adapter class
-- ✅ No changes to existing client code
+- Creating a new adaptee class
+- Creating a new adapter class
+- No changes to existing client code
 
-## 🎯 When to Use Adapter Pattern
+## When to Use Adapter Pattern
 
-### ✅ **Use When:**
+### **Use When:**
 - You need to integrate **third-party libraries** with incompatible interfaces
 - You want to **reuse existing classes** that don't fit your interface
 - You need to make **legacy code** work with modern systems
 - Different data sources provide the **same information in different formats**
 
-### ❌ **Avoid When:**
+### **Avoid When:**
 - You control both the client and service interfaces (use direct implementation)
 - The interfaces are already compatible
 - You only have one data source (unnecessary complexity)
 
-## 🔧 Advanced Features
+## Advanced Features
 
 ### 1. **Error Recovery**
 Each adapter handles vendor-specific errors gracefully and provides fallback values.
@@ -286,7 +286,7 @@ All adapters implement the same `NetworkInformation` interface, ensuring:
 - **Type Safety**: Compile-time checking
 - **Documentation**: Clear contract definition
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 After studying this implementation, you'll understand:
 
@@ -296,7 +296,7 @@ After studying this implementation, you'll understand:
 4. **Polymorphism and interface design** best practices
 5. **Real-world application** of the Adapter pattern in network management
 
-## 🏆 Pattern Benefits Summary
+## Pattern Benefits Summary
 
 | Benefit | Description | Example in This Implementation |
 |---------|-------------|-------------------------------|
@@ -308,6 +308,6 @@ After studying this implementation, you'll understand:
 
 ---
 
-**🎉 Master the Adapter Pattern through practical network integration!**
+**Master the Adapter Pattern through practical network integration!**
 
 *Transform incompatible interfaces into seamless collaboration.*
